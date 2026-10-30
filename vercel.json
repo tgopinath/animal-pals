@@ -1,0 +1,6 @@
+{
+  "headers": [
+    { "source": "/(sw.js|index.html|app.js|data.js|data-ta.js|videos.js|calls.js|styles.css)", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] },
+    { "source": "/manifest.json", "headers": [{ "key": "Content-Type", "value": "application/manifest+json" }] }
+  ]
+}

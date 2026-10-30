@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Animal Pals</title>
+  <meta name="description" content="See and hear real animals, birds and every living being — real photos, real sounds, 3D models." />
+  <meta name="theme-color" content="#F6F5F1" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0F110F" media="(prefers-color-scheme: dark)" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Animal Pals" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon-512.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></symbol>
+      <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
+      <symbol id="i-quiz" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></symbol>
+      <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+      <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z" fill="currentColor" stroke="none"/></symbol>
+      <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 4h3.5v16H7zM13.5 4H17v16h-3.5z" fill="currentColor" stroke="none"/></symbol>
+      <symbol id="i-cube" viewBox="0 0 24 24"><path d="m12 2.5 8.5 4.75v9.5L12 21.5l-8.5-4.75v-9.5z"/><path d="M3.5 7.25 12 12l8.5-4.75M12 12v9.5"/></symbol>
+      <symbol id="i-speak" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
+      <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5 8 12l7 7"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-home2" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+      <symbol id="i-food" viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 21V3c-2.5 1.5-3.5 4-3.5 7.5H17"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></symbol>
+      <symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 21v-6M12 15l-4-4M12 13l3-3M8 11a4 4 0 1 1 1-7.5A4.5 4.5 0 0 1 17 5a4 4 0 0 1-2 7.5H8.5"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.5 3.2 8.2 7.5 9.5 4.3-1.3 7.5-5 7.5-9.5V6z"/></symbol>
+      <symbol id="i-family" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9.5" r="2.5"/><path d="M2.5 20a5.5 5.5 0 0 1 11 0M13.5 20a4 4 0 0 1 8 0"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></symbol>
+      <symbol id="i-wave" viewBox="0 0 24 24"><path d="M3 12h2M7 8v8M11 5v14M15 9v6M19 7v10M21 12h0"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="#/" aria-label="Animal Pals home">
+        <img src="icon.svg" alt="" width="30" height="30" />
+        <span>Animal Pals</span>
+      </a>
+      <nav class="topnav" aria-label="Main">
+        <a href="#/" data-tab="home">Discover</a>
+        <a href="#/explore" data-tab="explore">Tree of life</a>
+        <a href="#/game" data-tab="game">Quiz</a>
+        <a href="#/faves" data-tab="faves">Saved</a>
+      </nav>
+      <form class="search" id="searchForm" role="search" autocomplete="off">
+        <svg class="ico"><use href="#i-search"/></svg>
+        <input id="searchInput" type="search" placeholder="Search any animal, bird, insect or plant" aria-label="Search living beings" enterkeyhint="search" />
+        <button type="button" class="mic" id="micBtn" aria-label="Search by voice" title="Search by voice">
+          <svg class="ico"><use href="#i-mic"/></svg>
+        </button>
+      </form>
+      <button class="langbtn" id="langBtn" type="button" aria-pressed="false"><svg class="ico"><use href="#i-globe"/></svg><span>தமிழ்</span></button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Main">
+    <a href="#/" data-tab="home"><svg class="ico"><use href="#i-home"/></svg>Discover</a>
+    <a href="#/explore" data-tab="explore"><svg class="ico"><use href="#i-compass"/></svg>Explore</a>
+    <a href="#/game" data-tab="game"><svg class="ico"><use href="#i-quiz"/></svg>Quiz</a>
+    <a href="#/faves" data-tab="faves"><svg class="ico"><use href="#i-bookmark"/></svg>Saved</a>
+  </nav>
+
+  <div class="listening" id="listening" hidden>
+    <div class="listening-card" role="dialog" aria-label="Voice search">
+      <div class="pulse"><svg class="ico"><use href="#i-mic"/></svg></div>
+      <p class="listening-title">Listening…</p>
+      <p class="listening-hint" id="listeningText">Say an animal's name, like "tiger"</p>
+      <button class="btn outline" id="stopListen">Cancel</button>
+    </div>
+  </div>
+
+  <div class="viewer3d" id="viewer3d" hidden>
+    <div class="viewer3d-bar">
+      <div><span class="eyebrow">3D model</span><strong id="viewer3dTitle"></strong></div>
+      <button class="iconbtn" id="close3d" aria-label="Close 3D view"><svg class="ico"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="viewer3d-stage" id="viewer3dStage"></div>
+    <p class="viewer3d-hint">Drag to rotate · Pinch or scroll to zoom</p>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
