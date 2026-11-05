@@ -1,5 +1,5 @@
 // App shell offline; photos cached as they are seen so favourites work without internet.
-const SHELL = 'ap-shell-v14', IMG = 'ap-img-v2';
+const SHELL = 'ap-shell-v15', IMG = 'ap-img-v2';
 const FILES = ['./', 'index.html', 'styles.css', 'app.js', 'data.js', 'videos.js', 'data-ta.js', 'calls.js', 'manifest.json', 'icon.svg', 'icon-192.png', 'icon-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(SHELL).then(c => c.addAll(FILES))); self.skipWaiting(); });
 // Drop older app caches (an earlier version kept sound clips there, which Safari can't play).

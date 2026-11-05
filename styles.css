@@ -58,7 +58,7 @@ img { display: block; max-width: 100%; }
   border-bottom: 1px solid var(--line);
   padding-top: env(safe-area-inset-top);
 }
-.top-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 28px; padding: 12px 24px; }
+.top-inner { max-width: none; margin: 0 auto; display: flex; align-items: center; gap: 28px; padding: 12px clamp(16px, 3vw, 48px); }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; letter-spacing: -.01em; flex-shrink: 0; }
 .brand img { border-radius: 8px; }
 .topnav { display: flex; gap: 4px; }
@@ -78,7 +78,7 @@ img { display: block; max-width: 100%; }
 .mic { width: 34px; height: 34px; border-radius: 9px; display: grid; place-items: center; color: var(--ink-2); }
 .mic:hover { background: var(--surface-2); color: var(--ink); }
 
-main { max-width: 1200px; margin: 0 auto; padding: 24px 24px 64px; outline: none; }
+main { width: 100%; max-width: none; margin: 0 auto; padding: 24px clamp(16px, 3vw, 48px) 64px; outline: none; }
 
 /* ---------- Typography ---------- */
 .eyebrow { display: block; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
@@ -239,7 +239,7 @@ main { max-width: 1200px; margin: 0 auto; padding: 24px 24px 64px; outline: none
 .d-actions .btn { flex: 1 1 160px; }
 
 .about { margin-top: 32px; }
-.about p { font-size: 18px; line-height: 1.6; margin: 10px 0 0; color: var(--ink); }
+.about p { font-size: 18px; line-height: 1.6; margin: 10px 0 0; color: var(--ink); max-width: 70ch; }
 .facts { margin: 28px 0 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
 .fact { display: grid; grid-template-columns: 36px 120px 1fr; gap: 12px; align-items: start; padding: 14px 0; border-bottom: 1px solid var(--line); }
 .fact .ico { color: var(--accent); margin-top: 2px; }
